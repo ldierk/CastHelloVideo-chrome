@@ -1,0 +1,18 @@
+ {
+  "manifest_version": 2,
+
+  "name": "Hello Video Extension",
+  "description": "'Google Cast Chrome Sender SDK: Hello Videos' as Extension",
+  "version": "1.0",
+
+  "browser_action": {
+                     "default_icon": "icon.png"
+                     },
+  "background": {
+                 "scripts": ["background.js"]
+                 },
+  "permissions": [
+                  "tabs"
+                  ],
+  "content_security_policy": "script-src 'self' https://www.gstatic.com; object-src 'self'"
+  }

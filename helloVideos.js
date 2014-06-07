@@ -485,4 +485,53 @@ function appendMessage(message) {
   dw.innerHTML += '\n' + JSON.stringify(message);
 };
 
+window.onload = function () {
+document.getElementById('lcm').onclick = function () {
+    loadCustomMedia();
+};
 
+document.getElementById('r0').onclick = function () {
+    selectMedia(0);
+};
+document.getElementById('r1').onclick = function () {
+    selectMedia(1);
+};
+document.getElementById('r2').onclick = function () {
+    selectMedia(2);
+};
+document.getElementById('r3').onclick = function () {
+    selectMedia(3);
+};
+document.getElementById('r4').onclick = function () {
+    selectMedia(4);
+};
+
+document.getElementById('srv').onmouseup = function () {
+    setReceiverVolume(1-this.value/100,false);
+};
+
+document.getElementById('la').onclick = function () {
+    launchApp();
+};
+document.getElementById('sa').onclick = function () {
+    stopApp();
+};
+document.getElementById('lm').onclick = function () {
+  loadMedia();
+};
+document.getElementById('playpauseresume').onclick = function () {
+    playMedia();
+};
+document.getElementById('sm').onclick = function () {
+  stopMedia();
+};
+document.getElementById('mm').onclick = function () {
+  muteMedia(this);
+};
+document.getElementById('progress').onmouseup = function () {
+  seekMedia(this.value);
+};
+
+
+
+};
