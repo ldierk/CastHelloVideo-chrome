@@ -4,7 +4,8 @@
   "name": "Hello Video Extension",
   "description": "'Google Cast Chrome Sender SDK: Hello Videos' as Extension",
   "version": "1.0",
-
+  "icons": {            "48": "logo48.png",
+                        "128": "logo128.png" },
   "browser_action": {
                      "default_icon": "icon.png"
                      },
